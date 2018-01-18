@@ -4,9 +4,11 @@
     .tile {
         width: 190px;
         height: 190px;
-        border: 1px solid #efefef;
+        border: 1px solid #808080;
         float: left;
         margin: 5px 5px;
+        text-align: center;
+        line-height: 180px;
     }
     .tile-header {
         width: 190px;
@@ -21,7 +23,12 @@
     .tile:nth-child(18) {
         background: #ccb8c1;
     }
-
+    .tile-element-selected {
+        background: #4cff00;
+    }
+    #answered {
+        background: #4cff00;
+    }
 
 </style>
 
@@ -38,11 +45,9 @@
         <div class="tile" taskId="@task.TaskID">
             @task.Name - (@task.Challenge)
         </div>
-    }
-
+     }
 
 </div>
-
 
 
 
@@ -82,4 +87,3 @@
         });
     });
 </script>
-

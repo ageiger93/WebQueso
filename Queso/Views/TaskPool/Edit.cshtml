@@ -1,0 +1,52 @@
+﻿@model Queso.Models.TaskPool
+<style>
+    .tile {
+        width: 190px;
+        height: 25px;
+        border: 1px solid #808080;
+        float: left;
+        margin: 7px 7px;
+        text-align: center;
+    }
+    .tile-header {
+        width: 190px;
+        float: left;
+        margin: 7px 7px;
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid #ff6a00;
+    }
+    .tile-container {
+        width: 900px;
+    }
+
+</style>
+@*<header>Edit</header>*@
+<h1>Edit</h1>
+
+<div class="tile-container">
+
+
+    <div class="tile-header">Task ID</div>
+    <div class="tile-header">Task Description</div>
+    <div class="tile-header">Is challenge?</div>
+    <div class="tile-header">Is active?</div>
+    @*<br />*@
+    <div class="tile">@Model.TaskID</div>
+    <div class="tile">@Model.Name</div>
+
+    <div class="tile">
+        <select>
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+    </div>
+
+    <div class="tile">
+        <select>
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+    </div>
+    
+</div>

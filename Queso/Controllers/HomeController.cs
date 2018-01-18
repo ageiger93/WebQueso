@@ -9,18 +9,18 @@ using Queso.Models;
 namespace Queso.Controllers
 {
     public class HomeController : Controller
-    {
-        public ActionResult Index()
         {
+        public ActionResult Index()
+            {
 
             List<User> users;
 
             using (var db = new QuesoContext())
-            {
+                {
                 users = db.Users.ToList();
-            }
+                }
 
             return View(users);
+            }
         }
-    }
 }

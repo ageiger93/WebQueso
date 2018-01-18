@@ -35,6 +35,8 @@ namespace Queso.Controllers
                     board.Tasks.AddRange(temp.GetRange(0,12));
                     board.Tasks.Add(temp.Last());
                     board.Tasks.AddRange(temp.GetRange(12,12));
+
+                    //var user = 
                 }
             }
 
